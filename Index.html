@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lekhasri — MBA | Product & Supply Chain</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Lekhasri Paramasivam Sukumar — MBA candidate (BITSoM) • Supply chain & product builder • Story-driven portfolio" />
+  <style>
+    :root{
+      --bg1:#0f1724;
+      --bg2:#07102a;
+      --accent1:#7c3aed;
+      --accent2:#06b6d4;
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(120deg,var(--bg1),var(--bg2));
+      color:#e6eef6;
+      line-height:1.5;
+    }
+    .container{max-width:980px;margin:36px auto;padding:24px;}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .avatar{
+      width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent1),var(--accent2));
+      display:grid;place-items:center;font-weight:700;font-size:20px;color:white;
+    }
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-weight:600}
+    .hero{
+      margin-top:28px;
+      display:grid;
+      gap:18px;
+      grid-template-columns: 1fr;
+      align-items:center;
+    }
+    h1{font-size:28px;margin:0}
+    .subtitle{color:var(--muted);margin:0;font-size:15px}
+    .hero-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      background:linear-gradient(90deg,var(--accent1),var(--accent2));
+      color:white;padding:10px 14px;border-radius:10px;border:0;font-weight:700;text-decoration:none;
+    }
+    .outline{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--muted);text-decoration:none;font-weight:600}
+    .card{background:var(--card);border-radius:14px;padding:18px;border:1px solid rgba(255,255,255,0.02)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px;}
+    .stat{padding:14px;border-radius:10px;text-align:center}
+    .stat h3{margin:0;font-size:22px}
+    .stat p{margin:6px 0 0;color:var(--muted);font-size:13px}
+    section{margin-top:26px}
+    .two-col{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .experience-item{margin-bottom:12px;padding:12px;border-radius:8px;background:linear-gradient(180deg,rgba(255,255,255,0.01),transparent)}
+    .meta{color:var(--muted);font-size:13px;margin-bottom:6px}
+    ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
+    footer{margin-top:32px;color:var(--muted);font-size:13px;text-align:center;padding-bottom:48px}
+    @media(max-width:880px){.two-col{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:520px){.grid{grid-template-columns:1fr}}
+    .fade-up{opacity:0;transform:translateY(8px);animation:fadeUp 700ms ease forwards}
+    @keyframes fadeUp{to{opacity:1;transform:none}}
+    .small{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="fade-up">
+      <div class="logo">
+        <div class="avatar">L</div>
+        <div>
+          <div style="font-weight:800">Lekhasri Paramasivam Sukumar</div>
+          <div class="small">MBA Candidate (BITSoM ’26) — Product, Supply Chain & Impact</div>
+        </div>
+      </div>
+      <nav class="small">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero card fade-up">
+      <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap">
+        <div>
+          <h1>Turning messy logistics into smooth stories — with data, design, and grit.</h1>
+          <p class="subtitle">I’m an MBA student at BITSoM who scaled operations at Snowman Logistics, built product playbooks at WizLearnr, and writes code-free stories that move people. I love solving messy problems that matter.</p>
+
+          <div class="hero-row" style="margin-top:12px">
+            <a class="btn" href="./LEKHASRI PARAMASIVAM SUKUMAR_CV.pdf" target="_blank">📄 Download Resume</a>
+            <a class="outline" href="mailto:lekhasrips@gmail.com">✉️ Contact me</a>
+            <a class="outline" href="https://www.linkedin.com/in/lekhasri/" target="_blank">LinkedIn</a>
+          </div>
+        </div>
+
+        <div style="margin-left:auto;min-width:220px">
+          <div class="card" style="text-align:center">
+            <div class="small">Numbers that tell a quick story</div>
+            <div style="display:flex;gap:8px;justify-content:center;margin-top:12px">
+              <div class="stat">
+                <h3 id="c1">0</h3>
+                <p>Clients managed</p>
+              </div>
+              <div class="stat">
+                <h3 id="c2">0%</h3>
+                <p>On-time delivery</p>
+              </div>
+              <div class="stat">
+                <h3 id="c3">₹0</h3>
+                <p>Warehouse loss avoided</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="two-col">
+      <main>
+        <section id="about" class="fade-up">
+          <div class="card">
+            <h2 style="margin-top:0">About me — the quick story</h2>
+            <p class="small">I combine supply chain hygiene with product thinking. At Snowman Logistics I improved delivery times, prevented ₹1.5M in losses, and managed 50+ accounts. At WizLearnr I helped shape an AI playbook that led to a 4× engagement bump. Outside work I tutor, run social-impact events, and obsess about storytelling in dashboards.</p>
+          </div>
+        </section>
+
+        <section id="work" class="fade-up">
+          <div class="card">
+            <h3>Selected Experience</h3>
+            <div class="experience-item">
+              <div class="meta">Assistant Manager — Snowman Logistics (Jul ’22 – Apr ’24)</div>
+              <ul>
+                <li>Managed 50+ enterprise client accounts; resolved escalations with a 95% success rate.</li>
+                <li>Improved on-time delivery to 96% for 3 quarters; reduced lead times by 18% using lean methods.</li>
+                <li>Prevented ₹1.5M in warehouse losses by introducing stricter SKU verification and RFID for tracking.</li>
+              </ul>
+            </div>
+            <div class="experience-item">
+              <div class="meta">Product & Growth Intern — WizLearnr (Feb ’25 – Jun ’25)</div>
+              <ul>
+                <li>Delivered ~30% cost savings on lead-gen through negotiation & vendor strategy.</li>
+                <li>Built an enterprise AI adoption playbook and recommended product pivots that improved engagement 4×.</li>
+              </ul>
+            </div>
+            <div class="experience-item">
+              <div class="meta">Marketing & Growth Intern — Traya (Aug ’24 – Oct ’24)</div>
+              <ul>
+                <li>Ran a 250+ user consumer study; rewrote vernacular influencer scripts and improved conversion touchpoints.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="fade-up">
+          <div class="card">
+            <h3>Projects & research</h3>
+            <ul>
+              <li><strong>Employee Welfare Study</strong> — PLS-SEM & SPSS analyses across 270 companies; built Tableau dashboards to share insights.</li>
+              <li><strong>WizLearnr AI Playbook</strong> — Scalable framework: “User Need + Success” for enterprise adoption.</li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card fade-up">
+          <h4 style="margin-top:0">Achievements</h4>
+          <ul>
+            <li>Gold medal — New Product Development, IIM Bangalore</li>
+            <li>Winner — Data Analytics Case Competition (IIPM, Bengaluru)</li>
+            <li>Global 2nd Runner-Up — Dispute Resolution (NYIT)</li>
+            <li>GRE: 324/340 (Quant 87th percentile)</li>
+          </ul>
+        </div>
+        <div class="card fade-up" style="margin-top:12px;">
+          <h4 style="margin-top:0">Social impact</h4>
+          <p class="small">Aarambh tutoring — helped an underprivileged student score 87% in CBSE Maths. Organized walkathons & blood drives across campus.</p>
+        </div>
+        <div class="card fade-up" id="contact" style="margin-top:12px;">
+          <h4 style="margin-top:0">Get in touch</h4>
+          <p class="small">Email: <a href="mailto:lekhasrips@gmail.com" style="color:var(--accent2);text-decoration:none">lekhasrips@gmail.com</a></p>
+          <p class="small">LinkedIn: <a href="https://www.linkedin.com/in/lekhasri/" target="_blank" style="color:var(--accent2)">linkedin.com/in/lekhasri</a></p>
+          <p class="small">GitHub: <a href="https://github.com/lekhasrips-prog/lekhasrips-prog.github.io" target="_blank" style="color:var(--accent2)">github.com/lekhasrips-prog</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="small fade-up">
+      Built with ❤️ • Edit <code>index.html</code> in this repo and commit to update your site.
+    </footer>
+  </div>
+
+  <script>
+    function animateCounter(id, target, suffix = "") {
+      const el = document.getElementById(id);
+      if(!el) return;
+      const duration = 900;
+      const frameRate = 30;
+      const totalFrames = Math.round(duration / (1000 / frameRate));
+      let frame = 0;
+      const start = 0;
+      const diff = target - start;
+      const formatter = new Intl.NumberFormat('en-IN');
+      const raf = () => {
+        frame++;
+        const progress = frame / totalFrames;
+        const value = Math.round(start + diff * (1 - Math.pow(1 - progress, 3)));
+        if(id === 'c3') {
+          el.textContent = '₹' + formatter.format(value);
+        } else if(id === 'c2') {
+          el.textContent = value + suffix;
+        } else {
+          el.textContent = formatter.format(value) + suffix;
+        }
+        if(frame < totalFrames) requestAnimationFrame(raf);
+      };
+      requestAnimationFrame(raf);
+    }
+    document.addEventListener('DOMContentLoaded', ()=> {
+      setTimeout(()=> {
+        animateCounter('c1', 50);
+        animateCounter('c2', 96, '%');
+        animateCounter('c3', 1500000);
+      }, 300);
+    });
+  </script>
+</body>
+</html>
